@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Oswald:wght@400;700&family=Passion+One&family=Paytone+One&family=Rowdies:wght@300&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.contact-us {
+    display: flex;
+}
+
+.left {
+    width: 50%;
+    height: 100vh;
+    background: rgb(214, 214, 214);
+}
+
+.contact-us .left {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    padding: 60px 40px;
+}
+
+.left h1 {
+    font-family: 'Paytone One', sans-serif;
+    margin-bottom: 10px;
+    margin-top: -20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.left #intro {
+    width: 100%;  
+    max-width: 480px;
+    font-size: 1.1vw;
+    text-align: center;
+    align-self: center;
+    font-family: calibri;
+    margin-bottom: 60px; 
+    padding: 0px 20px;
+}
+
+.left .contact {
+    display: flex;
+    align-items: center;
+    margin: 8px 0px;
+}
+
+ 
+
+.contact a {
+    border: 2px solid black;
+    color: rgb(0, 0, 0);
+    padding: 15px 16px;
+    height: 100%;
+    width: 100%;
+    max-width: 50px;
+    max-height: 50px;
+    border-radius: 50%;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: 0.2s;
+}
+
+.contact a:hover {
+    background: blue;
+    color: white;
+    
+}
+
+.contact span {
+    font-family: 'Arial Black';
+    font-size: 13px;
+}
+
+.contact p {
+    line-height: 23px;
+    font-family: calibri;
+    width: 100%;
+    max-width: 250px;
+    font-size: 1.1vw;
+    padding-left: 30px;
+}
+
+.right {
+    width: 100%;
+    background: url(contact-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+
+.right h2 {
+    color: white;
+    font-family: 'Paytone One', sans-serif;
+    padding-top: 60px;
+    font-size: 3vw;
+    margin-bottom: 60px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 500px;
+    margin: 0px 50px ;
+}
+
+form .text-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 7px 0px;
+
+}
+
+form input[type="text"] {
+    padding: 10px 10px;
+    border-radius: 3px;
+}
+
+input[type="text"], textarea {
+    padding: 0px 10px;
+    font-family: calibri;
+    overflow: hidden;
+    font-size: 15px;
+    background: rgba(250, 250, 250, 0.829);
+    color: rgb(0, 0, 0);
+    border: none;
+    resize: none;
+    max-width: 500px;
+    border-radius: 3px;
+}
+
+#typing {
+   font-weight: 500;
+   line-height: 1.4em;
+   height: 200px;
+   padding-top: 10px;
+   padding-bottom: 10px;
+}
+
+input[type="submit"] {
+    background: blue;
+    color: white;
+    width: 100%;
+    max-width: 180px;
+    margin-top: 20px;
+    border: none;
+    align-self: center;
+    padding: 10px 0px;
+    font-family: 'Arial';
+    font-size: 15px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background: rgb(0, 0, 107);
+}
+
+h4 {
+    text-align: center;
+    font-family:'Arial Black', Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    padding-top: 70px;
+    margin-bottom: 30px;
+}
+
+.get {
+    margin-top: auto;
+}
+
+.getintouch {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}    
+
+.getintouch a {
+    font-size: 27px;
+    color: rgba(0, 0, 0, 0.5);
+    padding: 13px 17px;
+    margin: 0px 15px;
+    height: 100%;
+    width: 100%;
+    max-width: 50px;
+    max-height: 50px;
+    border-radius: 50%;
+    transition: 0.3s ease;
+}
+
+.fb a:hover {
+    color: rgb(17, 0, 255);
+}
+
+.insta a:hover {
+    color:  purple;
+}
+
+.twitter a:hover {
+    color: rgb(0, 204, 255);
+}
+
+.git a:hover {
+    color: rgb(0, 0, 0);
+}
+
+
+
+ 
+@media only screen and (max-width: 768px) {
+    .contact-us {
+        display: block;
+        width: 100%;      
+    }
+
+    .left .contact {
+        margin: 0px 0px;
+        padding: 0;
+    }
+
+    .contact a {
+        font-size: 14px;
+        max-height: 40px;
+        max-width: 40px;
+
+    }
+
+    h4 {
+        margin-bottom: 10px;
+    }
+
+    .contact-us .left,
+    .right{
+        width: 100%;
+        height: auto;
+        min-height: 100vh;
+    }
+    
+    .right h2 {
+        font-size: 35px;
+    }
+    
+    .contact p {
+        font-size: 14px;
+        padding: 20px;
+        width: 100%;
+    }
+
+    .contact span {
+        font-size: 11px;
+    }
+
+    .left {
+        height: auto;
+        min-height: 100vh;
+        width: 100%;
+        background-position: fixed;
+        background-size: cover;
+    }
+
+    .left h1 {
+        font-size: 25px;
+    }
+
+    .left #intro {
+        font-size: 14px;
+        padding: 0px;
+    }
+
+    .getintouch a {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        padding: 20px;
+        margin: 0px 0px;
+
+    }
+}
